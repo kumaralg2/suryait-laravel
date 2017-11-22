@@ -47,7 +47,7 @@
                                     <h4 class="text-info-1 white">Certification</h4>
 
                                     <p class="text-info-3 white">Online Learning..</p>
-                                    <a href='web-app-certification-course' class="btn btn-green"><span>Get Certificate now !</span></a>
+                                    <a href='web-app-certification-course-create' class="btn btn-green"><span>Get Certificate now !</span></a>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                                                 </div>
 
 
-                                                <a href="web-app-certification-course.html" class="btn btn-green"><span>more details</span></a>
+                                                <a href="web-app-certification-course-create" class="btn btn-green"><span>more details</span></a>
                                             </div>
                                         </div>
                                     </div>

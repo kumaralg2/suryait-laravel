@@ -17,7 +17,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LIBRARY FONT-->
-    <link type="text/css" rel="stylesheet" href="https/fontsgoogleapiscom/MS_2.css">
+    <!-- <link type="text/css" rel="stylesheet" href="https/fontsgoogleapiscom/MS_2.css"> -->
     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <!-- STYLE CSS    -->
     <!--link(type="text/css", rel='stylesheet', href='assets/css/color-1.css', id="color-skins")-->
-    <link type="text/css" rel="stylesheet" href="index.html" id="color-skins">
+    <link type="text/css" rel="stylesheet" id="color-skins">
     <script src="{{asset('assets/libs/jquery/jquery-2.1.4.min.js')}}"></script>
     <script src="{{asset('assets/libs/js-cookie/js.cookie.js')}}"></script>
     <script>
@@ -48,14 +48,14 @@
             $('#color-skins').attr('href', 'assets/css/color-1.css');
         }
     </script>
-
+  
 
     <!---------Responsive menu tabs------------------->
     <link rel="stylesheet" href="assets/css/responsive-tabs.css">
 
 
     <!-- Mega menu files -->
-    <link href="{{asset('assets/css/mega_menu.min.css')}}" rel="stylesheet">
+     <link href="{{asset('assets/css/mega_menu.min.css')}}" rel="stylesheet"> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{asset('assets/js/jquery-1.11.3.min.js')}}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -856,6 +856,9 @@
     <script src="{{asset('assets/libs/isotope/isotope.pkgd.min.js')}}"></script>
     <script src="{{asset('assets/libs/isotope/fit-columns.js')}}"></script>
     <script src="{{asset('assets/js/pages/homepage.js')}}"></script>
+    <script>
+    $(".myform").reset();
+    </script>
 </body>
 
 </html>
