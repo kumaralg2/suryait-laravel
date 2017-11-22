@@ -14,15 +14,40 @@
 Route::get('/index', function () {
     return view('index');
 });
+//Route::get('create', 'UserRegisterController@index');
+//Route::post('store','UserRegisterController@store');
 Route::get('/progressive-web-app-development-training', function () {
     return view('progressive-web-app-development-training');
 });
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/web-app-certification-course', function () {
-    return view('web-app-certification-course');
+
+//Calling Web App Certification View from Controller
+//Route::get('/web-app-certification-course/index', 'WebAppDevCertController@index');
+//Route::get('/web-app-certification-course/create', 'WebAppDevCertController@create');
+Route::get('/web-app-certification-course-create', 'WebAppDevCertController@create');
+
+Route::post('/web-app-certification-course-create', 'WebAppDevCertController@store');
+
+Route::get('/web-app-certification-course-create', 'WebAppDevCertController@index');
+
+Route::get('/web-app-certification-course-create-paynow', function () {
+    return view('web-app-certification-course-create-paynow');
 });
+
+// Route::get('/web-app-certification-course', function () {
+//     return view('/web-app-certification-course/create');
+// });
+// Route::get('/verify-web-app-certification-course', function () {
+//     return view('verify-web-app-certification-course');
+// });
+// Route::post('/verify-web-app-certification-course', function () {
+//     var_dump($_POST);
+// });
+
+
+
 Route::get('/aboutus-suryaittech', function () {
     return view('aboutus-suryaittech');
 });
@@ -67,6 +92,10 @@ Route::get('/web-application-development', function () {
 Route::get('/surya-ittech-online-training', function () {
     return view('surya-ittech-online-training');
 });
+Route::get('/web-techies-solutions', function () {
+    return view('web-techies-solutions');
+});
+
 Route::get('/web-techies-solutions', function () {
     return view('web-techies-solutions');
 });
