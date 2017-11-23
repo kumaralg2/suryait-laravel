@@ -14,9 +14,9 @@
                             <div class="search-input-wrapper">
                                 <h2 class="captions white">Contact SURYA ITTECH</h2>
                                 <ol class="breadcrumb white">
-                                    <li><a href="index.html" class="white">Home</a>
+                                    <li><a href="index" class="white">Home</a>
                                     </li>
-                                    <li><a href="contact-web-techies.html" class="white">Contact SURYA ITTECH</a>
+                                    <li><a href="contact-suryaittech" class="white">Contact SURYA ITTECH</a>
                                     </li>
                                 </ol>
                             </div>
@@ -25,40 +25,52 @@
                 </div>
             </div>
              
-            <!-----Contact Form------->
             <div class="container" style="padding:5px">
+                <br>
+                  <div class="col-md-6 col-md-offset-3">
+                @if(session()->has('message.level'))
+                                    <div class="alert alert-{{ session('message.level') }}"> 
+                                    {!! session('message.content') !!}
+                                    </div>
+              @endif   
+               </div>
+                 <br>
                 <div class="row">
                     <div class="col-md-12">
-                    <form role="form" id="contact-form" class="contact-form">
+                    <form role="form" method ="POST" action="/contact-suryaittech" id="contact-form" class="contact-form">
+                          {{csrf_field()}}
                                 <div class="row">
                                     <div class="col-md-3 col-md-offset-3">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
+                                        <input type="text" class="form-control" name="name" autocomplete="off" id="Name" placeholder="Name">
                                     </div>
-                                </div>
-                                    <div class="col-md-3">
+                                   </div>
+                                   <div class="col-md-3">
                                     <div class="form-group">
                                         <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
                                     </div>
-                                </div>
-                                </div>
-                                <div class="row">
+                                    </div>
+                                     </div>
+                                     <div class="row">
                                     <div class="col-md-6 col-md-offset-3">
                                     <div class="form-group">
-                                        <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
+                                        <textarea type="text" class="form-control textarea" rows="3" name="message" id="Message" placeholder="Message"></textarea>
                                     </div>
-                                </div>
-                                </div>
+                                    </div>
+                                    </div> 
                                 <div class="row">
                                 <div class="col-md-3 col-md-offset-3">
                                  <button type="submit" class="btn main-btn" style="background-color:green">Send a message</button>
                               </div>
                               </div>
-                            </form>
+                      </form>
                     </div>
+                    
                 </div>
+                <br>
+          
             </div>
-            <!-----End of Contact Form------->
+             
             
             <!-- Map & Contact -->
             <div class="container">

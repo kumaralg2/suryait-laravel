@@ -35,17 +35,14 @@ Route::get('/web-app-certification-course-create', 'WebAppDevCertController@inde
 Route::get('/web-app-certification-course-create-paynow', function () {
     return view('web-app-certification-course-create-paynow');
 });
+//----------------------------------------------------------
+//Contact Us Form Routes
+Route::get('/contact-suryaittech', 'ContactController@create');
 
-// Route::get('/web-app-certification-course', function () {
-//     return view('/web-app-certification-course/create');
-// });
-// Route::get('/verify-web-app-certification-course', function () {
-//     return view('verify-web-app-certification-course');
-// });
-// Route::post('/verify-web-app-certification-course', function () {
-//     var_dump($_POST);
-// });
+Route::post('/contact-suryaittech', 'ContactController@store');
 
+Route::get('/contact-suryaittech', 'ContactController@index');
+//------------------------------------------------------------
 
 
 Route::get('/aboutus-suryaittech', function () {
@@ -64,9 +61,6 @@ Route::get('/students', function () {
     return view('students');
 });
 
-Route::get('/contact-suryaittech', function () {
-    return view('contact-suryaittech');
-});
 Route::get('/html5-css3-javascript-training', function () {
     return view('html5-css3-javascript-training');
 });
